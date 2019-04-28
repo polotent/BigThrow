@@ -342,7 +342,7 @@ def draw_gui_build(x_part,y_part):
     pygame.draw.line(gameDisplay,black,[x_part*2.5,y_part * 3.5],[x_part*2.5,display_height],4)
     pygame.draw.line(gameDisplay,black,[x_part*3.25,y_part * 3.5],[x_part*3.25,display_height],4)
     #v0
-    word = return_word('Начальная скорость', font_size_big)
+    word = return_word('Start speed', font_size_big)
     gameDisplay.blit(word,(x_part * 0.5 - word.get_rect().width / 2 , y_part * 0.1))
     pygame.draw.rect(gameDisplay,black, [x_part * 0.1, y_part * 0.45,x_part * 0.8,y_part * 0.3],3)
     word = return_word('v0 = ' + v0 + kareta_v0 + ' м/с', font_size_big)
@@ -352,7 +352,7 @@ def draw_gui_build(x_part,y_part):
     slider(1)
     pygame.draw.rect(gameDisplay,purple, [x_part * 0.1, y_part * 0.82,slider1[0] - x_part * 0.1,y_part * 0.1],0)
     #h0
-    word = return_word('Начальная высота', font_size_big)
+    word = return_word('Start height', font_size_big)
     gameDisplay.blit(word,(x_part * 0.5 - word.get_rect().width / 2 , y_part * 1.1))
     pygame.draw.rect(gameDisplay,black, [x_part * 0.1, y_part * 1.45,x_part * 0.8,y_part * 0.3],3)
     word = return_word('h0 = ' + h0 + kareta_h0 + ' м', font_size_big)
@@ -362,7 +362,7 @@ def draw_gui_build(x_part,y_part):
     slider(2)
     pygame.draw.rect(gameDisplay,purple, [x_part * 0.1, y_part * 1.82,slider2[0] - x_part * 0.1,y_part * 0.1],0)
     #angle
-    word = return_word('Угол', font_size_big)
+    word = return_word('Angle', font_size_big)
     gameDisplay.blit(word,(x_part * 0.5 - word.get_rect().width / 2 , y_part * 2.1))
     pygame.draw.rect(gameDisplay,black, [x_part * 0.1, y_part * 2.45,x_part * 0.8,y_part * 0.3],3)
     word = return_word('a = ' + angle + kareta_angle + ' град', font_size_big)
@@ -373,20 +373,20 @@ def draw_gui_build(x_part,y_part):
     pygame.draw.rect(gameDisplay,purple, [x_part * 0.1, y_part * 2.82,slider3[0] - x_part * 0.1,y_part * 0.1],0)
 
     #button_build(x_part * 3.25, y_part * 3.5,x_part * 0.75,y_part * 0.5, white, blue)
-    word = return_word('Построить', font_size_big)
+    word = return_word('Build', font_size_big)
     gameDisplay.blit(word,(x_part * 3.65 - word.get_rect().width / 2 , y_part * 3.65))
 
     button_stop(x_part * 2.5, y_part * 3.5,x_part * 0.75,y_part * 0.5, white, blue)
-    word = return_word('Завершить', font_size_big)
+    word = return_word('Finish', font_size_big)
     gameDisplay.blit(word,(x_part * 2.9 - word.get_rect().width / 2 , y_part * 3.65))
 
-    word = return_word('H(max) : ' + str(height_var) + ' м', font_size_big)
+    word = return_word('Max. height : ' + str(height_var) + ' м', font_size_big)
     gameDisplay.blit(word,(x_part * 0.5 - word.get_rect().width / 2 , y_part * 3.2))
 
-    word = return_word('Дальность : ' + str(length_var) + ' м', font_size_big)
+    word = return_word('Distance : ' + str(length_var) + ' м', font_size_big)
     gameDisplay.blit(word,(x_part * 0.5 - word.get_rect().width / 2 , y_part * 3.4))
 
-    word = return_word('Время : ' + str(time_var) + ' c', font_size_big)
+    word = return_word('Time : ' + str(time_var) + ' c', font_size_big)
     gameDisplay.blit(word,(x_part * 0.5 - word.get_rect().width / 2 , y_part * 3.6))
 
     button_1(x_part * 1, y_part * 3.5,x_part * 0.5,y_part * 0.5, white, blue)
