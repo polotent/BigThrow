@@ -42,7 +42,7 @@ small_mere1 = 50
 
 #gameDisplay = pygame.display.set_mode([display_width,display_height],pygame.FULLSCREEN)
 gameDisplay = pygame.display.set_mode((infoObject.current_w, infoObject.current_h),pygame.FULLSCREEN)
-pygame.display.set_caption = ('Throwing a Body with the angle to horizon')
+pygame.display.set_caption = ('Throwing a body at the angle to horizon')
 
 pygame.display.iconify
 
@@ -262,7 +262,7 @@ def draw_gui(x_part,y_part):
     gameDisplay.blit(word,(x_part * 0.5 - word.get_rect().width / 2 , y_part * 0.1))
     button(v0, x_part * 0.1, y_part * 0.45,x_part * 0.8,y_part * 0.3, white, grey,'v0')
     pygame.draw.rect(gameDisplay,black, [x_part * 0.1, y_part * 0.45,x_part * 0.8,y_part * 0.3],3)
-    word = return_word('v0 = ' + v0 + kareta_v0 + ' м/с', font_size_big)
+    word = return_word('v0 = ' + v0 + kareta_v0 + ' m/sec', font_size_big)
     gameDisplay.blit(word,(x_part * 0.5 - word.get_rect().width / 2 , y_part * 0.5))
 
     pygame.draw.rect(gameDisplay,black, [x_part * 0.1, y_part * 0.82,x_part * 0.8,y_part * 0.1],3)
@@ -275,7 +275,7 @@ def draw_gui(x_part,y_part):
     gameDisplay.blit(word,(x_part * 0.5 - word.get_rect().width / 2 , y_part * 1.1))
     button(h0, x_part * 0.1, y_part * 1.45,x_part * 0.8,y_part * 0.3, white, grey,'h0')
     pygame.draw.rect(gameDisplay,black, [x_part * 0.1, y_part * 1.45,x_part * 0.8,y_part * 0.3],3)
-    word = return_word('h0 = ' + h0 + kareta_h0 + ' м', font_size_big)
+    word = return_word('h0 = ' + h0 + kareta_h0 + ' m', font_size_big)
     gameDisplay.blit(word,(x_part * 0.5 - word.get_rect().width / 2 , y_part * 1.5))
 
     pygame.draw.rect(gameDisplay,black, [x_part * 0.1, y_part * 1.82,x_part * 0.8,y_part * 0.1],3)
@@ -287,7 +287,7 @@ def draw_gui(x_part,y_part):
     gameDisplay.blit(word,(x_part * 0.5 - word.get_rect().width / 2 , y_part * 2.1))
     button(angle, x_part * 0.1, y_part * 2.45,x_part * 0.8,y_part * 0.3, white, grey,'angle')
     pygame.draw.rect(gameDisplay,black, [x_part * 0.1, y_part * 2.45,x_part * 0.8,y_part * 0.3],3)
-    word = return_word('a = ' + angle + kareta_angle + ' град', font_size_big)
+    word = return_word('a = ' + angle + kareta_angle + ' deg', font_size_big)
     gameDisplay.blit(word,(x_part * 0.5 - word.get_rect().width / 2 , y_part * 2.5))
 
     pygame.draw.rect(gameDisplay,black, [x_part * 0.1, y_part * 2.82,x_part * 0.8,y_part * 0.1],3)
@@ -304,13 +304,13 @@ def draw_gui(x_part,y_part):
     word = return_word('Finish', font_size_big)
     gameDisplay.blit(word,(x_part * 2.9 - word.get_rect().width / 2 , y_part * 3.65))
 
-    word = return_word('Max. height : ' + str(height_var) + ' м', font_size_big)
+    word = return_word('Max. height : ' + str(height_var) + ' m', font_size_big)
     gameDisplay.blit(word,(x_part * 0.5 - word.get_rect().width / 2 , y_part * 3.2))
 
-    word = return_word('Distance : ' + str(length_var) + ' м', font_size_big)
+    word = return_word('Distance : ' + str(length_var) + ' m', font_size_big)
     gameDisplay.blit(word,(x_part * 0.5 - word.get_rect().width / 2 , y_part * 3.4))
 
-    word = return_word('Time : ' + str(time_var) + ' с', font_size_big)
+    word = return_word('Time : ' + str(time_var) + ' sec', font_size_big)
     gameDisplay.blit(word,(x_part * 0.5 - word.get_rect().width / 2 , y_part * 3.6))
 
 
